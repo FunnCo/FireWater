@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
 Library/PackageCache/com.unity.burst@1.8.13/.Runtime/libburst-llvm-16.dylib filter=lfs diff=lfs merge=lfs -text
 *.so filter=lfs diff=lfs merge=lfs -text
 *.dylib filter=lfs diff=lfs merge=lfs -text
 *.dll filter=lfs diff=lfs merge=lfs -text
+=======
+Library/ArtifactDB filter=lfs diff=lfs merge=lfs -text
+Library/PackageCache/com.unity.burst@1.8.13/.Runtime/libburst-llvm-16.dylib filter=lfs diff=lfs merge=lfs -text
+*.so filter=lfs diff=lfs merge=lfs -text
+*.dylib filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+>>>>>>> 54360d06e100a1c5dc768bd81d94942992db273c
