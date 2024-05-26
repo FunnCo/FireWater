@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="ru">
+  <compounddef id="class_character_switcher" kind="class" language="C#" prot="public">
+    <compoundname>CharacterSwitcher</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_character_switcher_1a7f95df197a7204d5590ba9f5bf348d5c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CharacterSwitcher.index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <qualifiedname>CharacterSwitcher.index</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs" line="14" column="17" bodyfile="H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_character_switcher_1a481c5113abda66e2070a2cb193c4dd58" prot="private" static="no" mutable="no">
+        <type>List&lt; GameObject &gt;</type>
+        <definition>List&lt;GameObject&gt; CharacterSwitcher.players</definition>
+        <argsstring></argsstring>
+        <name>players</name>
+        <qualifiedname>CharacterSwitcher.players</qualifiedname>
+        <initializer>= new List&lt;GameObject&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs" line="17" column="19" bodyfile="H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_character_switcher_1a6367ec43104e6622fb078ee105e388c6" prot="private" static="no" mutable="no">
+        <type>PlayerInputManager</type>
+        <definition>PlayerInputManager CharacterSwitcher.manager</definition>
+        <argsstring></argsstring>
+        <name>manager</name>
+        <qualifiedname>CharacterSwitcher.manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs" line="20" column="32" bodyfile="H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_character_switcher_1a0e945bb50ec04a90d3fb2db10138ddf7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CharacterSwitcher.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>CharacterSwitcher.Start</qualifiedname>
+        <briefdescription>
+<para>Метод Start вызывается при инициализации объекта. Инициализирует менеджер ввода игрока и устанавливает первого персонажа. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs" line="26" column="10" bodyfile="H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs" bodystart="26" bodyend="31"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_character_switcher_1ab8bb8fb97e90542792a92071c561ee68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CharacterSwitcher.SwitchNewxtSpawnCharacter</definition>
+        <argsstring>()</argsstring>
+        <name>SwitchNewxtSpawnCharacter</name>
+        <qualifiedname>CharacterSwitcher.SwitchNewxtSpawnCharacter</qualifiedname>
+        <briefdescription>
+<para>Метод для переключения на следующего персонажа при спавне. Изменяет активного персонажа на следующего в списке. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs" line="37" column="17" bodyfile="H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs" bodystart="37" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс предназначен для переключения спавна между игровыми персонажами. Управляет текущим активным персонажем и изменяет его при необходимости. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>CharacterSwitcher</label>
+        <link refid="class_character_switcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>CharacterSwitcher</label>
+        <link refid="class_character_switcher"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs" line="11" column="7" bodyfile="H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs" bodystart="12" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_character_switcher_1a7f95df197a7204d5590ba9f5bf348d5c" prot="private" virt="non-virtual"><scope>CharacterSwitcher</scope><name>index</name></member>
+      <member refid="class_character_switcher_1a6367ec43104e6622fb078ee105e388c6" prot="private" virt="non-virtual"><scope>CharacterSwitcher</scope><name>manager</name></member>
+      <member refid="class_character_switcher_1a481c5113abda66e2070a2cb193c4dd58" prot="private" virt="non-virtual"><scope>CharacterSwitcher</scope><name>players</name></member>
+      <member refid="class_character_switcher_1a0e945bb50ec04a90d3fb2db10138ddf7" prot="private" virt="non-virtual"><scope>CharacterSwitcher</scope><name>Start</name></member>
+      <member refid="class_character_switcher_1ab8bb8fb97e90542792a92071c561ee68" prot="public" virt="non-virtual"><scope>CharacterSwitcher</scope><name>SwitchNewxtSpawnCharacter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

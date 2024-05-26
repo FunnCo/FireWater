@@ -1,0 +1,418 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="ru">
+  <compounddef id="class_player_movement_controller" kind="class" language="C#" prot="public">
+    <compoundname>PlayerMovementController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_movement_controller_1a34e16c1490246532dcfec5939555dfb3" prot="private" static="no" mutable="no">
+        <type>Rigidbody2D</type>
+        <definition>Rigidbody2D PlayerMovementController.rbPlayer</definition>
+        <argsstring></argsstring>
+        <name>rbPlayer</name>
+        <qualifiedname>PlayerMovementController.rbPlayer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="15" column="25" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1a605f6e130289fc9908f223e604de3211" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerMovementController.horizontalDirecton</definition>
+        <argsstring></argsstring>
+        <name>horizontalDirecton</name>
+        <qualifiedname>PlayerMovementController.horizontalDirecton</qualifiedname>
+        <initializer>= 0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="18" column="19" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1a121eb9609801217a29a0051e98fd1d7d" prot="private" static="no" mutable="no">
+        <type>SpriteRenderer</type>
+        <definition>SpriteRenderer PlayerMovementController.playerRenderer</definition>
+        <argsstring></argsstring>
+        <name>playerRenderer</name>
+        <qualifiedname>PlayerMovementController.playerRenderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="42" column="28" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1a837720dc89ce285d50b00387fac1606f" prot="private" static="no" mutable="no">
+        <type>CapsuleCollider2D</type>
+        <definition>CapsuleCollider2D PlayerMovementController.playerCollider</definition>
+        <argsstring></argsstring>
+        <name>playerCollider</name>
+        <qualifiedname>PlayerMovementController.playerCollider</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="45" column="31" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1abc742d17e6b8b96840ed2651cca60d82" prot="private" static="no" mutable="no">
+        <type>Animator</type>
+        <definition>Animator PlayerMovementController.playernimator</definition>
+        <argsstring></argsstring>
+        <name>playernimator</name>
+        <qualifiedname>PlayerMovementController.playernimator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="48" column="22" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1ac87f9438ec31fd4f5c7546405843bb3c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerMovementController.isFacingRight</definition>
+        <argsstring></argsstring>
+        <name>isFacingRight</name>
+        <qualifiedname>PlayerMovementController.isFacingRight</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="51" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1a53307c6705aac88f688905da4906387c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PlayerMovementController.jumpCount</definition>
+        <argsstring></argsstring>
+        <name>jumpCount</name>
+        <qualifiedname>PlayerMovementController.jumpCount</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="54" column="17" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1ac332e45ea0ff3406abe9711a40bcbfd9" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PlayerMovementController.shouldJump</definition>
+        <argsstring></argsstring>
+        <name>shouldJump</name>
+        <qualifiedname>PlayerMovementController.shouldJump</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="57" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_player_movement_controller_1a8bf7e79702f4b31d2aec7fadf208fa54" prot="public" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask PlayerMovementController.groundLayerMask</definition>
+        <argsstring></argsstring>
+        <name>groundLayerMask</name>
+        <qualifiedname>PlayerMovementController.groundLayerMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="21" column="22" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1a990866726e9188370e3d58db4dd382a3" prot="public" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask PlayerMovementController.movableGroundLayerMask</definition>
+        <argsstring></argsstring>
+        <name>movableGroundLayerMask</name>
+        <qualifiedname>PlayerMovementController.movableGroundLayerMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="24" column="22" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1ae677c6157545954ac732602b62f8dc3f" prot="public" static="no" mutable="no">
+        <type>PhysicsMaterial2D</type>
+        <definition>PhysicsMaterial2D PlayerMovementController.slipperyMaterial</definition>
+        <argsstring></argsstring>
+        <name>slipperyMaterial</name>
+        <qualifiedname>PlayerMovementController.slipperyMaterial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="27" column="30" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1a387651ff85d2012944525f675ebf5f80" prot="public" static="no" mutable="no">
+        <type>PhysicsMaterial2D</type>
+        <definition>PhysicsMaterial2D PlayerMovementController.normalMaterial</definition>
+        <argsstring></argsstring>
+        <name>normalMaterial</name>
+        <qualifiedname>PlayerMovementController.normalMaterial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="30" column="30" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1a24d692ea4c2731212fa64c29bc02517f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerMovementController.playerSpeed</definition>
+        <argsstring></argsstring>
+        <name>playerSpeed</name>
+        <qualifiedname>PlayerMovementController.playerSpeed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="33" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1a7b1a0d7d5f1c0b1d0f9de1e322615c81" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerMovementController.groundCheckDistance</definition>
+        <argsstring></argsstring>
+        <name>groundCheckDistance</name>
+        <qualifiedname>PlayerMovementController.groundCheckDistance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="36" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_player_movement_controller_1afeddddc4be7d0dcb3debb52e93e78e78" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float PlayerMovementController.playerJumpForce</definition>
+        <argsstring></argsstring>
+        <name>playerJumpForce</name>
+        <qualifiedname>PlayerMovementController.playerJumpForce</qualifiedname>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="39" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_player_movement_controller_1a77c70505f08e912f948529ebd2b11cc2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerMovementController.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>PlayerMovementController.Start</qualifiedname>
+        <briefdescription>
+<para>Метод Start вызывается при инициализации объекта. Инициализирует компоненты Rigidbody2D, SpriteRenderer, Animator и CapsuleCollider2D. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="63" column="10" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="63" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_movement_controller_1ae5fe1e8776604ded63eb25e191d5fe7b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerMovementController.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>PlayerMovementController.Update</qualifiedname>
+        <briefdescription>
+<para>Метод Update вызывается на каждом кадре. Управляет сменой направления взгляда игрока. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="75" column="10" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_movement_controller_1a51d9bc169de7db5462bfca93d11eae48" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float?</type>
+        <definition>float? PlayerMovementController.getGroundedAngleOrNull</definition>
+        <argsstring>()</argsstring>
+        <name>getGroundedAngleOrNull</name>
+        <qualifiedname>PlayerMovementController.getGroundedAngleOrNull</qualifiedname>
+        <briefdescription>
+<para>Метод для получения угла поверхности под игроком. Проверяет наличие земли под игроком и возвращает угол поверхности, если земля найдена. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Угол поверхности под игроком или null, если земля не найдена.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="85" column="19" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="85" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_movement_controller_1a0951e6aa1557f1324d88500c2e5d3615" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerMovementController.FixedUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>FixedUpdate</name>
+        <qualifiedname>PlayerMovementController.FixedUpdate</qualifiedname>
+        <briefdescription>
+<para>Метод FixedUpdate вызывается на каждом фиксированном кадре. Управляет движением, прыжками и физикой игрока. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="109" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="109" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_movement_controller_1a3a9807b41bf9ad14099f2293d8037da8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerMovementController.Flip</definition>
+        <argsstring>()</argsstring>
+        <name>Flip</name>
+        <qualifiedname>PlayerMovementController.Flip</qualifiedname>
+        <briefdescription>
+<para>Метод для смены направления взгляда игрока. Переворачивает спрайт игрока при изменении направления движения. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="156" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="156" bodyend="163"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_movement_controller_1a3b96db2ef668b3a4d2ee67e934dc008d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerMovementController.Move</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>Move</name>
+        <qualifiedname>PlayerMovementController.Move</qualifiedname>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Метод для управления движением игрока. Вызывается при изменении направления движения. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контекст ввода, содержащий данные о направлении движения.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="170" column="17" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="170" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_movement_controller_1a7f8ce256deca83f46585ce2003f06489" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerMovementController.Jump</definition>
+        <argsstring>(InputAction.CallbackContext context)</argsstring>
+        <name>Jump</name>
+        <qualifiedname>PlayerMovementController.Jump</qualifiedname>
+        <param>
+          <type>InputAction.CallbackContext</type>
+          <declname>context</declname>
+        </param>
+        <briefdescription>
+<para>Метод для выполнения прыжка игрока. Вызывается при начале прыжка. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>context</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Контекст ввода, содержащий данные о прыжке.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="185" column="17" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="185" bodyend="194"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс предназначен для управления движением игрока. Обеспечивает перемещение игрока, прыжки и обработку столкновений с землей. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerMovementController</label>
+        <link refid="class_player_movement_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="1">
+        <label>PlayerMovementController</label>
+        <link refid="class_player_movement_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" line="12" column="7" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs" bodystart="13" bodyend="195"/>
+    <listofallmembers>
+      <member refid="class_player_movement_controller_1a0951e6aa1557f1324d88500c2e5d3615" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>FixedUpdate</name></member>
+      <member refid="class_player_movement_controller_1a3a9807b41bf9ad14099f2293d8037da8" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>Flip</name></member>
+      <member refid="class_player_movement_controller_1a51d9bc169de7db5462bfca93d11eae48" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>getGroundedAngleOrNull</name></member>
+      <member refid="class_player_movement_controller_1a7b1a0d7d5f1c0b1d0f9de1e322615c81" prot="public" virt="non-virtual"><scope>PlayerMovementController</scope><name>groundCheckDistance</name></member>
+      <member refid="class_player_movement_controller_1a8bf7e79702f4b31d2aec7fadf208fa54" prot="public" virt="non-virtual"><scope>PlayerMovementController</scope><name>groundLayerMask</name></member>
+      <member refid="class_player_movement_controller_1a605f6e130289fc9908f223e604de3211" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>horizontalDirecton</name></member>
+      <member refid="class_player_movement_controller_1ac87f9438ec31fd4f5c7546405843bb3c" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>isFacingRight</name></member>
+      <member refid="class_player_movement_controller_1a7f8ce256deca83f46585ce2003f06489" prot="public" virt="non-virtual"><scope>PlayerMovementController</scope><name>Jump</name></member>
+      <member refid="class_player_movement_controller_1a53307c6705aac88f688905da4906387c" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>jumpCount</name></member>
+      <member refid="class_player_movement_controller_1a990866726e9188370e3d58db4dd382a3" prot="public" virt="non-virtual"><scope>PlayerMovementController</scope><name>movableGroundLayerMask</name></member>
+      <member refid="class_player_movement_controller_1a3b96db2ef668b3a4d2ee67e934dc008d" prot="public" virt="non-virtual"><scope>PlayerMovementController</scope><name>Move</name></member>
+      <member refid="class_player_movement_controller_1a387651ff85d2012944525f675ebf5f80" prot="public" virt="non-virtual"><scope>PlayerMovementController</scope><name>normalMaterial</name></member>
+      <member refid="class_player_movement_controller_1a837720dc89ce285d50b00387fac1606f" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>playerCollider</name></member>
+      <member refid="class_player_movement_controller_1afeddddc4be7d0dcb3debb52e93e78e78" prot="public" virt="non-virtual"><scope>PlayerMovementController</scope><name>playerJumpForce</name></member>
+      <member refid="class_player_movement_controller_1abc742d17e6b8b96840ed2651cca60d82" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>playernimator</name></member>
+      <member refid="class_player_movement_controller_1a121eb9609801217a29a0051e98fd1d7d" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>playerRenderer</name></member>
+      <member refid="class_player_movement_controller_1a24d692ea4c2731212fa64c29bc02517f" prot="public" virt="non-virtual"><scope>PlayerMovementController</scope><name>playerSpeed</name></member>
+      <member refid="class_player_movement_controller_1a34e16c1490246532dcfec5939555dfb3" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>rbPlayer</name></member>
+      <member refid="class_player_movement_controller_1ac332e45ea0ff3406abe9711a40bcbfd9" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>shouldJump</name></member>
+      <member refid="class_player_movement_controller_1ae677c6157545954ac732602b62f8dc3f" prot="public" virt="non-virtual"><scope>PlayerMovementController</scope><name>slipperyMaterial</name></member>
+      <member refid="class_player_movement_controller_1a77c70505f08e912f948529ebd2b11cc2" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>Start</name></member>
+      <member refid="class_player_movement_controller_1ae5fe1e8776604ded63eb25e191d5fe7b" prot="private" virt="non-virtual"><scope>PlayerMovementController</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

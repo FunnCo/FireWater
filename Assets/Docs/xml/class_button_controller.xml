@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="ru">
+  <compounddef id="class_button_controller" kind="class" language="C#" prot="public">
+    <compoundname>ButtonController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_button_controller_1a156a72ad5acc5983d671315fdfa78074" prot="private" static="no" mutable="no">
+        <type>List&lt; Object &gt;</type>
+        <definition>List&lt;Object&gt; ButtonController.objectsToActivate</definition>
+        <argsstring></argsstring>
+        <name>objectsToActivate</name>
+        <qualifiedname>ButtonController.objectsToActivate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" line="14" column="11" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_button_controller_1ae94e520e946aa9df0dd63a1d285a5491" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ButtonController.isButtonPressed</definition>
+        <argsstring></argsstring>
+        <name>isButtonPressed</name>
+        <qualifiedname>ButtonController.isButtonPressed</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" line="20" column="10" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_button_controller_1a26bba632a27f44025bdca349ac577dcb" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="interface_i_activateble" kindref="compound">IActivateble</ref> &gt;</type>
+        <definition>List&lt;IActivateble&gt; ButtonController.activatableTargets</definition>
+        <argsstring></argsstring>
+        <name>activatableTargets</name>
+        <qualifiedname>ButtonController.activatableTargets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" line="17" column="10" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_button_controller_1aceca9195c284be4c2ccfc7836c55a9a1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ButtonController.OnTriggerEnter2D</definition>
+        <argsstring>(Collider2D collision)</argsstring>
+        <name>OnTriggerEnter2D</name>
+        <qualifiedname>ButtonController.OnTriggerEnter2D</qualifiedname>
+        <param>
+          <type>Collider2D</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+<para>Метод вызывается при входе другого объекта в триггер кнопки. Устанавливает флаг, что кнопка нажата. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" line="26" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_button_controller_1a50e83b1fea24621eaccf2b32a8ba2fbe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ButtonController.OnTriggerExit2D</definition>
+        <argsstring>(Collider2D collision)</argsstring>
+        <name>OnTriggerExit2D</name>
+        <qualifiedname>ButtonController.OnTriggerExit2D</qualifiedname>
+        <param>
+          <type>Collider2D</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+<para>Метод вызывается при выходе другого объекта из триггера кнопки. Сбрасывает флаг, что кнопка нажата, и деактивирует все цели. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" line="35" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_button_controller_1a0925d59c54b2b7762aee924e64e84c82" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ButtonController.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>ButtonController.Update</qualifiedname>
+        <briefdescription>
+<para>Метод Update вызывается на каждом кадре. Активирует все цели, если кнопка нажата. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" line="45" column="10" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" bodystart="45" bodyend="51"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс предназначен для управления кнопкой, которая активирует или деактивирует заданные объекты при нажатии. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ButtonController</label>
+        <link refid="class_button_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ButtonController</label>
+        <link refid="class_button_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" line="11" column="7" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs" bodystart="12" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_button_controller_1a26bba632a27f44025bdca349ac577dcb" prot="private" virt="non-virtual"><scope>ButtonController</scope><name>activatableTargets</name></member>
+      <member refid="class_button_controller_1ae94e520e946aa9df0dd63a1d285a5491" prot="private" virt="non-virtual"><scope>ButtonController</scope><name>isButtonPressed</name></member>
+      <member refid="class_button_controller_1a156a72ad5acc5983d671315fdfa78074" prot="private" virt="non-virtual"><scope>ButtonController</scope><name>objectsToActivate</name></member>
+      <member refid="class_button_controller_1aceca9195c284be4c2ccfc7836c55a9a1" prot="private" virt="non-virtual"><scope>ButtonController</scope><name>OnTriggerEnter2D</name></member>
+      <member refid="class_button_controller_1a50e83b1fea24621eaccf2b32a8ba2fbe" prot="private" virt="non-virtual"><scope>ButtonController</scope><name>OnTriggerExit2D</name></member>
+      <member refid="class_button_controller_1a0925d59c54b2b7762aee924e64e84c82" prot="private" virt="non-virtual"><scope>ButtonController</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

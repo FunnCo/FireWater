@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>FireWater: Класс PlayerMovementController</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">FireWater
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_player_movement_controller.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_player_movement_controller-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс PlayerMovementController</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс предназначен для управления движением игрока. Обеспечивает перемещение игрока, прыжки и обработку столкновений с землей.  
+ <a href="#details">Подробнее...</a></p>
+
+<p>Базовые классы:MonoBehaviour.</p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a3b96db2ef668b3a4d2ee67e934dc008d" id="r_a3b96db2ef668b3a4d2ee67e934dc008d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b96db2ef668b3a4d2ee67e934dc008d">Move</a> (InputAction.CallbackContext context)</td></tr>
+<tr class="memdesc:a3b96db2ef668b3a4d2ee67e934dc008d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для управления движением игрока. Вызывается при изменении направления движения.  <br /></td></tr>
+<tr class="separator:a3b96db2ef668b3a4d2ee67e934dc008d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8ce256deca83f46585ce2003f06489" id="r_a7f8ce256deca83f46585ce2003f06489"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f8ce256deca83f46585ce2003f06489">Jump</a> (InputAction.CallbackContext context)</td></tr>
+<tr class="memdesc:a7f8ce256deca83f46585ce2003f06489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для выполнения прыжка игрока. Вызывается при начале прыжка.  <br /></td></tr>
+<tr class="separator:a7f8ce256deca83f46585ce2003f06489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a8bf7e79702f4b31d2aec7fadf208fa54" id="r_a8bf7e79702f4b31d2aec7fadf208fa54"><td class="memItemLeft" align="right" valign="top"><a id="a8bf7e79702f4b31d2aec7fadf208fa54" name="a8bf7e79702f4b31d2aec7fadf208fa54"></a>
+LayerMask&#160;</td><td class="memItemRight" valign="bottom"><b>groundLayerMask</b></td></tr>
+<tr class="separator:a8bf7e79702f4b31d2aec7fadf208fa54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a990866726e9188370e3d58db4dd382a3" id="r_a990866726e9188370e3d58db4dd382a3"><td class="memItemLeft" align="right" valign="top"><a id="a990866726e9188370e3d58db4dd382a3" name="a990866726e9188370e3d58db4dd382a3"></a>
+LayerMask&#160;</td><td class="memItemRight" valign="bottom"><b>movableGroundLayerMask</b></td></tr>
+<tr class="separator:a990866726e9188370e3d58db4dd382a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae677c6157545954ac732602b62f8dc3f" id="r_ae677c6157545954ac732602b62f8dc3f"><td class="memItemLeft" align="right" valign="top"><a id="ae677c6157545954ac732602b62f8dc3f" name="ae677c6157545954ac732602b62f8dc3f"></a>
+PhysicsMaterial2D&#160;</td><td class="memItemRight" valign="bottom"><b>slipperyMaterial</b></td></tr>
+<tr class="separator:ae677c6157545954ac732602b62f8dc3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a387651ff85d2012944525f675ebf5f80" id="r_a387651ff85d2012944525f675ebf5f80"><td class="memItemLeft" align="right" valign="top"><a id="a387651ff85d2012944525f675ebf5f80" name="a387651ff85d2012944525f675ebf5f80"></a>
+PhysicsMaterial2D&#160;</td><td class="memItemRight" valign="bottom"><b>normalMaterial</b></td></tr>
+<tr class="separator:a387651ff85d2012944525f675ebf5f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24d692ea4c2731212fa64c29bc02517f" id="r_a24d692ea4c2731212fa64c29bc02517f"><td class="memItemLeft" align="right" valign="top"><a id="a24d692ea4c2731212fa64c29bc02517f" name="a24d692ea4c2731212fa64c29bc02517f"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>playerSpeed</b></td></tr>
+<tr class="separator:a24d692ea4c2731212fa64c29bc02517f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1a0d7d5f1c0b1d0f9de1e322615c81" id="r_a7b1a0d7d5f1c0b1d0f9de1e322615c81"><td class="memItemLeft" align="right" valign="top"><a id="a7b1a0d7d5f1c0b1d0f9de1e322615c81" name="a7b1a0d7d5f1c0b1d0f9de1e322615c81"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>groundCheckDistance</b></td></tr>
+<tr class="separator:a7b1a0d7d5f1c0b1d0f9de1e322615c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeddddc4be7d0dcb3debb52e93e78e78" id="r_afeddddc4be7d0dcb3debb52e93e78e78"><td class="memItemLeft" align="right" valign="top"><a id="afeddddc4be7d0dcb3debb52e93e78e78" name="afeddddc4be7d0dcb3debb52e93e78e78"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>playerJumpForce</b> = 10</td></tr>
+<tr class="separator:afeddddc4be7d0dcb3debb52e93e78e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a77c70505f08e912f948529ebd2b11cc2" id="r_a77c70505f08e912f948529ebd2b11cc2"><td class="memItemLeft" align="right" valign="top"><a id="a77c70505f08e912f948529ebd2b11cc2" name="a77c70505f08e912f948529ebd2b11cc2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
+<tr class="memdesc:a77c70505f08e912f948529ebd2b11cc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод Start вызывается при инициализации объекта. Инициализирует компоненты Rigidbody2D, SpriteRenderer, Animator и CapsuleCollider2D. <br /></td></tr>
+<tr class="separator:a77c70505f08e912f948529ebd2b11cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5fe1e8776604ded63eb25e191d5fe7b" id="r_ae5fe1e8776604ded63eb25e191d5fe7b"><td class="memItemLeft" align="right" valign="top"><a id="ae5fe1e8776604ded63eb25e191d5fe7b" name="ae5fe1e8776604ded63eb25e191d5fe7b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
+<tr class="memdesc:ae5fe1e8776604ded63eb25e191d5fe7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод Update вызывается на каждом кадре. Управляет сменой направления взгляда игрока. <br /></td></tr>
+<tr class="separator:ae5fe1e8776604ded63eb25e191d5fe7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51d9bc169de7db5462bfca93d11eae48" id="r_a51d9bc169de7db5462bfca93d11eae48"><td class="memItemLeft" align="right" valign="top">float?&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51d9bc169de7db5462bfca93d11eae48">getGroundedAngleOrNull</a> ()</td></tr>
+<tr class="memdesc:a51d9bc169de7db5462bfca93d11eae48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для получения угла поверхности под игроком. Проверяет наличие земли под игроком и возвращает угол поверхности, если земля найдена.  <br /></td></tr>
+<tr class="separator:a51d9bc169de7db5462bfca93d11eae48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0951e6aa1557f1324d88500c2e5d3615" id="r_a0951e6aa1557f1324d88500c2e5d3615"><td class="memItemLeft" align="right" valign="top"><a id="a0951e6aa1557f1324d88500c2e5d3615" name="a0951e6aa1557f1324d88500c2e5d3615"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FixedUpdate</b> ()</td></tr>
+<tr class="memdesc:a0951e6aa1557f1324d88500c2e5d3615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод FixedUpdate вызывается на каждом фиксированном кадре. Управляет движением, прыжками и физикой игрока. <br /></td></tr>
+<tr class="separator:a0951e6aa1557f1324d88500c2e5d3615"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a9807b41bf9ad14099f2293d8037da8" id="r_a3a9807b41bf9ad14099f2293d8037da8"><td class="memItemLeft" align="right" valign="top"><a id="a3a9807b41bf9ad14099f2293d8037da8" name="a3a9807b41bf9ad14099f2293d8037da8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Flip</b> ()</td></tr>
+<tr class="memdesc:a3a9807b41bf9ad14099f2293d8037da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Метод для смены направления взгляда игрока. Переворачивает спрайт игрока при изменении направления движения. <br /></td></tr>
+<tr class="separator:a3a9807b41bf9ad14099f2293d8037da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a34e16c1490246532dcfec5939555dfb3" id="r_a34e16c1490246532dcfec5939555dfb3"><td class="memItemLeft" align="right" valign="top"><a id="a34e16c1490246532dcfec5939555dfb3" name="a34e16c1490246532dcfec5939555dfb3"></a>
+Rigidbody2D&#160;</td><td class="memItemRight" valign="bottom"><b>rbPlayer</b></td></tr>
+<tr class="separator:a34e16c1490246532dcfec5939555dfb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605f6e130289fc9908f223e604de3211" id="r_a605f6e130289fc9908f223e604de3211"><td class="memItemLeft" align="right" valign="top"><a id="a605f6e130289fc9908f223e604de3211" name="a605f6e130289fc9908f223e604de3211"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>horizontalDirecton</b> = 0f</td></tr>
+<tr class="separator:a605f6e130289fc9908f223e604de3211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a121eb9609801217a29a0051e98fd1d7d" id="r_a121eb9609801217a29a0051e98fd1d7d"><td class="memItemLeft" align="right" valign="top"><a id="a121eb9609801217a29a0051e98fd1d7d" name="a121eb9609801217a29a0051e98fd1d7d"></a>
+SpriteRenderer&#160;</td><td class="memItemRight" valign="bottom"><b>playerRenderer</b></td></tr>
+<tr class="separator:a121eb9609801217a29a0051e98fd1d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a837720dc89ce285d50b00387fac1606f" id="r_a837720dc89ce285d50b00387fac1606f"><td class="memItemLeft" align="right" valign="top"><a id="a837720dc89ce285d50b00387fac1606f" name="a837720dc89ce285d50b00387fac1606f"></a>
+CapsuleCollider2D&#160;</td><td class="memItemRight" valign="bottom"><b>playerCollider</b></td></tr>
+<tr class="separator:a837720dc89ce285d50b00387fac1606f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc742d17e6b8b96840ed2651cca60d82" id="r_abc742d17e6b8b96840ed2651cca60d82"><td class="memItemLeft" align="right" valign="top"><a id="abc742d17e6b8b96840ed2651cca60d82" name="abc742d17e6b8b96840ed2651cca60d82"></a>
+Animator&#160;</td><td class="memItemRight" valign="bottom"><b>playernimator</b></td></tr>
+<tr class="separator:abc742d17e6b8b96840ed2651cca60d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac87f9438ec31fd4f5c7546405843bb3c" id="r_ac87f9438ec31fd4f5c7546405843bb3c"><td class="memItemLeft" align="right" valign="top"><a id="ac87f9438ec31fd4f5c7546405843bb3c" name="ac87f9438ec31fd4f5c7546405843bb3c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFacingRight</b> = true</td></tr>
+<tr class="separator:ac87f9438ec31fd4f5c7546405843bb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53307c6705aac88f688905da4906387c" id="r_a53307c6705aac88f688905da4906387c"><td class="memItemLeft" align="right" valign="top"><a id="a53307c6705aac88f688905da4906387c" name="a53307c6705aac88f688905da4906387c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>jumpCount</b> = 0</td></tr>
+<tr class="separator:a53307c6705aac88f688905da4906387c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac332e45ea0ff3406abe9711a40bcbfd9" id="r_ac332e45ea0ff3406abe9711a40bcbfd9"><td class="memItemLeft" align="right" valign="top"><a id="ac332e45ea0ff3406abe9711a40bcbfd9" name="ac332e45ea0ff3406abe9711a40bcbfd9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>shouldJump</b> = false</td></tr>
+<tr class="separator:ac332e45ea0ff3406abe9711a40bcbfd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс предназначен для управления движением игрока. Обеспечивает перемещение игрока, прыжки и обработку столкновений с землей. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a51d9bc169de7db5462bfca93d11eae48" name="a51d9bc169de7db5462bfca93d11eae48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51d9bc169de7db5462bfca93d11eae48">&#9670;&#160;</a></span>getGroundedAngleOrNull()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float? PlayerMovementController.getGroundedAngleOrNull </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Метод для получения угла поверхности под игроком. Проверяет наличие земли под игроком и возвращает угол поверхности, если земля найдена. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Угол поверхности под игроком или null, если земля не найдена.</dd></dl>
+
+</div>
+</div>
+<a id="a7f8ce256deca83f46585ce2003f06489" name="a7f8ce256deca83f46585ce2003f06489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f8ce256deca83f46585ce2003f06489">&#9670;&#160;</a></span>Jump()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovementController.Jump </td>
+          <td>(</td>
+          <td class="paramtype">InputAction.CallbackContext</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод для выполнения прыжка игрока. Вызывается при начале прыжка. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Контекст ввода, содержащий данные о прыжке.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3b96db2ef668b3a4d2ee67e934dc008d" name="a3b96db2ef668b3a4d2ee67e934dc008d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b96db2ef668b3a4d2ee67e934dc008d">&#9670;&#160;</a></span>Move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PlayerMovementController.Move </td>
+          <td>(</td>
+          <td class="paramtype">InputAction.CallbackContext</td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Метод для управления движением игрока. Вызывается при изменении направления движения. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Контекст ввода, содержащий данные о направлении движения.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>H:/FireWater/TestProj/Assets/Scripts/Controllers/<b>PlayerMovementController.cs</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_player_movement_controller.html">PlayerMovementController</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+  </ul>
+</div>
+</body>
+</html>

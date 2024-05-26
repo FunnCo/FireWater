@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interface_i_activateble" xml:lang="ru">
+<title>Интерфейс IActivateble</title>
+<indexterm><primary>IActivateble</primary></indexterm>
+<para>
+
+<para>Интерфейс, предназначенный для объектов, которые могут быть активированы и деактивированы. </para>
+ 
+</para>
+<para>
+Производные классы:<link linkend="_class_activatable_moving_object_controller">ActivatableMovingObjectController</link>.</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_interface_i_activateble_1a60ec707b80b21f14dfe0013b44ae524a">Activate</link> ()</para>
+
+<para>Метод для активации объекта. </para>
+</listitem>
+            <listitem><para>void <link linkend="_interface_i_activateble_1a0651b645f094eba415fdf06fd5012690">Deactivate</link> ()</para>
+
+<para>Метод для деактивации объекта. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Интерфейс, предназначенный для объектов, которые могут быть активированы и деактивированы. </para>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_interface_i_activateble_1a60ec707b80b21f14dfe0013b44ae524a"/><section>
+    <title>Activate()</title>
+<indexterm><primary>Activate</primary><secondary>IActivateble</secondary></indexterm>
+<indexterm><primary>IActivateble</primary><secondary>Activate</secondary></indexterm>
+<para><computeroutput>void IActivateble.Activate ( )</computeroutput></para><para>
+
+<para>Метод для активации объекта. </para>
+</para>
+<para>
+Замещается в <link linkend="_class_activatable_moving_object_controller_1a9f4bb93dc5f4e216a6cbf72172d48fd0">ActivatableMovingObjectController</link>.</para>
+</section>
+<anchor xml:id="_interface_i_activateble_1a0651b645f094eba415fdf06fd5012690"/><section>
+    <title>Deactivate()</title>
+<indexterm><primary>Deactivate</primary><secondary>IActivateble</secondary></indexterm>
+<indexterm><primary>IActivateble</primary><secondary>Deactivate</secondary></indexterm>
+<para><computeroutput>void IActivateble.Deactivate ( )</computeroutput></para><para>
+
+<para>Метод для деактивации объекта. </para>
+</para>
+<para>
+Замещается в <link linkend="_class_activatable_moving_object_controller_1ae0be8e329c91d083088bf5bafd16f3ea">ActivatableMovingObjectController</link>.</para>
+</section>
+<para>
+Объявления и описания членов интерфейса находятся в файле:</para>
+H:/FireWater/TestProj/Assets/Scripts/Interfaces/IActivatable.cs</section>
+</section>

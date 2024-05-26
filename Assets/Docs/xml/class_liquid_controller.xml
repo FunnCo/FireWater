@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="ru">
+  <compounddef id="class_liquid_controller" kind="class" language="C#" prot="public">
+    <compoundname>LiquidController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_liquid_controller_1a445a5156b4110d44f9b90e49165a7a88" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool LiquidController.canKillFirePlayer</definition>
+        <argsstring></argsstring>
+        <name>canKillFirePlayer</name>
+        <qualifiedname>LiquidController.canKillFirePlayer</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/LiquidController.cs" line="13" column="19" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/LiquidController.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_liquid_controller_1a83666910e7d0f9a391a30bcf829969e4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool LiquidController.canKillWaterPlayer</definition>
+        <argsstring></argsstring>
+        <name>canKillWaterPlayer</name>
+        <qualifiedname>LiquidController.canKillWaterPlayer</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/LiquidController.cs" line="16" column="19" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/LiquidController.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_liquid_controller_1a78a6f2b4fc6d26b0b5b5f1c274199d26" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LiquidController.OnTriggerEnter2D</definition>
+        <argsstring>(Collider2D collision)</argsstring>
+        <name>OnTriggerEnter2D</name>
+        <qualifiedname>LiquidController.OnTriggerEnter2D</qualifiedname>
+        <param>
+          <type>Collider2D</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+<para>Метод вызывается при входе другого коллайдера в триггер. Проверяет тег коллайдера и уничтожает объект игрока, если он соответствует условиям. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>collision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Коллайдер, который вошёл в триггер.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/LiquidController.cs" line="23" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/LiquidController.cs" bodystart="23" bodyend="35"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс предназначен для управления поведением жидкости. Жидкость может уничтожать игроков с определёнными тегами при их попадании в зону триггера. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>LiquidController</label>
+        <link refid="class_liquid_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>LiquidController</label>
+        <link refid="class_liquid_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/LiquidController.cs" line="10" column="7" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/LiquidController.cs" bodystart="11" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_liquid_controller_1a445a5156b4110d44f9b90e49165a7a88" prot="private" virt="non-virtual"><scope>LiquidController</scope><name>canKillFirePlayer</name></member>
+      <member refid="class_liquid_controller_1a83666910e7d0f9a391a30bcf829969e4" prot="private" virt="non-virtual"><scope>LiquidController</scope><name>canKillWaterPlayer</name></member>
+      <member refid="class_liquid_controller_1a78a6f2b4fc6d26b0b5b5f1c274199d26" prot="private" virt="non-virtual"><scope>LiquidController</scope><name>OnTriggerEnter2D</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="ru">
+  <compounddef id="class_lever_controller" kind="class" language="C#" prot="public">
+    <compoundname>LeverController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_lever_controller_1a62e4369ce07619cb111ebf3762152e54" prot="private" static="no" mutable="no">
+        <type>List&lt; Object &gt;</type>
+        <definition>List&lt;Object&gt; LeverController.objectsToActivate</definition>
+        <argsstring></argsstring>
+        <name>objectsToActivate</name>
+        <qualifiedname>LeverController.objectsToActivate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/LeverController.cs" line="14" column="19" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/LeverController.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_lever_controller_1a04bc6813dc3e818d82258a9f1b2ab6f1" prot="private" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="no" privatesettable="no" protectedsettable="no">
+        <type>List&lt; <ref refid="interface_i_activateble" kindref="compound">IActivateble</ref> &gt;</type>
+        <definition>List&lt;IActivateble&gt; LeverController.activatableTargets</definition>
+        <argsstring></argsstring>
+        <name>activatableTargets</name>
+        <qualifiedname>LeverController.activatableTargets</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/LeverController.cs" line="17" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/LeverController.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_lever_controller_1a9e29b471f4276de62d7697496f0e78cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void LeverController.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <qualifiedname>LeverController.Update</qualifiedname>
+        <briefdescription>
+<para>Метод Update вызывается на каждом кадре. Проверяет поворот рычага и активирует или деактивирует объекты в зависимости от угла поворота. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/LeverController.cs" line="23" column="10" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/LeverController.cs" bodystart="23" bodyend="33"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс предназначен для управления рычагом, который активирует или деактивирует объекты при повороте. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>LeverController</label>
+        <link refid="class_lever_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>LeverController</label>
+        <link refid="class_lever_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/LeverController.cs" line="11" column="7" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/LeverController.cs" bodystart="12" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_lever_controller_1a04bc6813dc3e818d82258a9f1b2ab6f1" prot="private" virt="non-virtual"><scope>LeverController</scope><name>activatableTargets</name></member>
+      <member refid="class_lever_controller_1a62e4369ce07619cb111ebf3762152e54" prot="private" virt="non-virtual"><scope>LeverController</scope><name>objectsToActivate</name></member>
+      <member refid="class_lever_controller_1a9e29b471f4276de62d7697496f0e78cc" prot="private" virt="non-virtual"><scope>LeverController</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

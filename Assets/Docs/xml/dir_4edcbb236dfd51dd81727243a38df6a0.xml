@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="ru">
+  <compounddef id="dir_4edcbb236dfd51dd81727243a38df6a0" kind="dir">
+    <compoundname>H:/FireWater/TestProj/Assets/Scripts</compoundname>
+    <innerdir refid="dir_d5657f1c73d4e980db6e1e9bf6fd54c8">H:/FireWater/TestProj/Assets/Scripts/Controllers</innerdir>
+    <innerdir refid="dir_f78fac8af9e11e6b390247f55ccca38c">H:/FireWater/TestProj/Assets/Scripts/Interfaces</innerdir>
+    <innerfile refid="_character_switcher_8cs">CharacterSwitcher.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/FireWater/TestProj/Assets/Scripts/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.11.0" xml:lang="ru">
+  <compound refid="class_activatable_moving_object_controller" kind="class"><name>ActivatableMovingObjectController</name>
+    <member refid="class_activatable_moving_object_controller_1a344135e24b8097755c7813e9dc057d19" kind="variable"><name>isClosed</name></member>
+    <member refid="class_activatable_moving_object_controller_1a502bce807b096066231c199d09d05de4" kind="variable"><name>initClosedState</name></member>
+    <member refid="class_activatable_moving_object_controller_1a61340f45652ac4330d274097f1877cbd" kind="variable"><name>startPosition</name></member>
+    <member refid="class_activatable_moving_object_controller_1ab123801fd096996f844f67ec61ba35cc" kind="variable"><name>endPosition</name></member>
+    <member refid="class_activatable_moving_object_controller_1a46954a0824b3f49eecf46dfbe1a7522e" kind="variable"><name>speed</name></member>
+    <member refid="class_activatable_moving_object_controller_1a1198a58394904bf328e9769ec27e9c11" kind="variable"><name>isVertical</name></member>
+    <member refid="class_activatable_moving_object_controller_1a2be07df05869ed42fc2b2627a16ed6aa" kind="variable"><name>moveWeight</name></member>
+    <member refid="class_activatable_moving_object_controller_1a1a7bea3f251f9528c6b3de5bcc1186f5" kind="function"><name>Start</name></member>
+    <member refid="class_activatable_moving_object_controller_1aff8cdf8f937d2977fb47dcd36602310b" kind="function"><name>FixedUpdate</name></member>
+    <member refid="class_activatable_moving_object_controller_1a9f4bb93dc5f4e216a6cbf72172d48fd0" kind="function"><name>Activate</name></member>
+    <member refid="class_activatable_moving_object_controller_1ae0be8e329c91d083088bf5bafd16f3ea" kind="function"><name>Deactivate</name></member>
+  </compound>
+  <compound refid="class_button_controller" kind="class"><name>ButtonController</name>
+    <member refid="class_button_controller_1a156a72ad5acc5983d671315fdfa78074" kind="variable"><name>objectsToActivate</name></member>
+    <member refid="class_button_controller_1ae94e520e946aa9df0dd63a1d285a5491" kind="variable"><name>isButtonPressed</name></member>
+    <member refid="class_button_controller_1a26bba632a27f44025bdca349ac577dcb" kind="property"><name>activatableTargets</name></member>
+    <member refid="class_button_controller_1aceca9195c284be4c2ccfc7836c55a9a1" kind="function"><name>OnTriggerEnter2D</name></member>
+    <member refid="class_button_controller_1a50e83b1fea24621eaccf2b32a8ba2fbe" kind="function"><name>OnTriggerExit2D</name></member>
+    <member refid="class_button_controller_1a0925d59c54b2b7762aee924e64e84c82" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_character_switcher" kind="class"><name>CharacterSwitcher</name>
+    <member refid="class_character_switcher_1a7f95df197a7204d5590ba9f5bf348d5c" kind="variable"><name>index</name></member>
+    <member refid="class_character_switcher_1a481c5113abda66e2070a2cb193c4dd58" kind="variable"><name>players</name></member>
+    <member refid="class_character_switcher_1a6367ec43104e6622fb078ee105e388c6" kind="variable"><name>manager</name></member>
+    <member refid="class_character_switcher_1a0e945bb50ec04a90d3fb2db10138ddf7" kind="function"><name>Start</name></member>
+    <member refid="class_character_switcher_1ab8bb8fb97e90542792a92071c561ee68" kind="function"><name>SwitchNewxtSpawnCharacter</name></member>
+  </compound>
+  <compound refid="interface_i_activateble" kind="interface"><name>IActivateble</name>
+    <member refid="interface_i_activateble_1a60ec707b80b21f14dfe0013b44ae524a" kind="function"><name>Activate</name></member>
+    <member refid="interface_i_activateble_1a0651b645f094eba415fdf06fd5012690" kind="function"><name>Deactivate</name></member>
+  </compound>
+  <compound refid="class_lever_controller" kind="class"><name>LeverController</name>
+    <member refid="class_lever_controller_1a62e4369ce07619cb111ebf3762152e54" kind="variable"><name>objectsToActivate</name></member>
+    <member refid="class_lever_controller_1a04bc6813dc3e818d82258a9f1b2ab6f1" kind="property"><name>activatableTargets</name></member>
+    <member refid="class_lever_controller_1a9e29b471f4276de62d7697496f0e78cc" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_liquid_controller" kind="class"><name>LiquidController</name>
+    <member refid="class_liquid_controller_1a445a5156b4110d44f9b90e49165a7a88" kind="variable"><name>canKillFirePlayer</name></member>
+    <member refid="class_liquid_controller_1a83666910e7d0f9a391a30bcf829969e4" kind="variable"><name>canKillWaterPlayer</name></member>
+    <member refid="class_liquid_controller_1a78a6f2b4fc6d26b0b5b5f1c274199d26" kind="function"><name>OnTriggerEnter2D</name></member>
+  </compound>
+  <compound refid="class_player_movement_controller" kind="class"><name>PlayerMovementController</name>
+    <member refid="class_player_movement_controller_1a34e16c1490246532dcfec5939555dfb3" kind="variable"><name>rbPlayer</name></member>
+    <member refid="class_player_movement_controller_1a605f6e130289fc9908f223e604de3211" kind="variable"><name>horizontalDirecton</name></member>
+    <member refid="class_player_movement_controller_1a121eb9609801217a29a0051e98fd1d7d" kind="variable"><name>playerRenderer</name></member>
+    <member refid="class_player_movement_controller_1a837720dc89ce285d50b00387fac1606f" kind="variable"><name>playerCollider</name></member>
+    <member refid="class_player_movement_controller_1abc742d17e6b8b96840ed2651cca60d82" kind="variable"><name>playernimator</name></member>
+    <member refid="class_player_movement_controller_1ac87f9438ec31fd4f5c7546405843bb3c" kind="variable"><name>isFacingRight</name></member>
+    <member refid="class_player_movement_controller_1a53307c6705aac88f688905da4906387c" kind="variable"><name>jumpCount</name></member>
+    <member refid="class_player_movement_controller_1ac332e45ea0ff3406abe9711a40bcbfd9" kind="variable"><name>shouldJump</name></member>
+    <member refid="class_player_movement_controller_1a8bf7e79702f4b31d2aec7fadf208fa54" kind="variable"><name>groundLayerMask</name></member>
+    <member refid="class_player_movement_controller_1a990866726e9188370e3d58db4dd382a3" kind="variable"><name>movableGroundLayerMask</name></member>
+    <member refid="class_player_movement_controller_1ae677c6157545954ac732602b62f8dc3f" kind="variable"><name>slipperyMaterial</name></member>
+    <member refid="class_player_movement_controller_1a387651ff85d2012944525f675ebf5f80" kind="variable"><name>normalMaterial</name></member>
+    <member refid="class_player_movement_controller_1a24d692ea4c2731212fa64c29bc02517f" kind="variable"><name>playerSpeed</name></member>
+    <member refid="class_player_movement_controller_1a7b1a0d7d5f1c0b1d0f9de1e322615c81" kind="variable"><name>groundCheckDistance</name></member>
+    <member refid="class_player_movement_controller_1afeddddc4be7d0dcb3debb52e93e78e78" kind="variable"><name>playerJumpForce</name></member>
+    <member refid="class_player_movement_controller_1a77c70505f08e912f948529ebd2b11cc2" kind="function"><name>Start</name></member>
+    <member refid="class_player_movement_controller_1ae5fe1e8776604ded63eb25e191d5fe7b" kind="function"><name>Update</name></member>
+    <member refid="class_player_movement_controller_1a51d9bc169de7db5462bfca93d11eae48" kind="function"><name>getGroundedAngleOrNull</name></member>
+    <member refid="class_player_movement_controller_1a0951e6aa1557f1324d88500c2e5d3615" kind="function"><name>FixedUpdate</name></member>
+    <member refid="class_player_movement_controller_1a3a9807b41bf9ad14099f2293d8037da8" kind="function"><name>Flip</name></member>
+    <member refid="class_player_movement_controller_1a3b96db2ef668b3a4d2ee67e934dc008d" kind="function"><name>Move</name></member>
+    <member refid="class_player_movement_controller_1a7f8ce256deca83f46585ce2003f06489" kind="function"><name>Jump</name></member>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_visual_scripting" kind="namespace"><name>Unity::VisualScripting</name>
+  </compound>
+  <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_input_system" kind="namespace"><name>UnityEngine::InputSystem</name>
+  </compound>
+  <compound refid="_character_switcher_8cs" kind="file"><name>CharacterSwitcher.cs</name>
+  </compound>
+  <compound refid="_activatable_moving_object_controller_8cs" kind="file"><name>ActivatableMovingObjectController.cs</name>
+  </compound>
+  <compound refid="_button_controller_8cs" kind="file"><name>ButtonController.cs</name>
+  </compound>
+  <compound refid="_lever_controller_8cs" kind="file"><name>LeverController.cs</name>
+  </compound>
+  <compound refid="_liquid_controller_8cs" kind="file"><name>LiquidController.cs</name>
+  </compound>
+  <compound refid="_player_movement_controller_8cs" kind="file"><name>PlayerMovementController.cs</name>
+  </compound>
+  <compound refid="_i_activatable_8cs" kind="file"><name>IActivatable.cs</name>
+  </compound>
+  <compound refid="dir_d5657f1c73d4e980db6e1e9bf6fd54c8" kind="dir"><name>H:/FireWater/TestProj/Assets/Scripts/Controllers</name>
+  </compound>
+  <compound refid="dir_f78fac8af9e11e6b390247f55ccca38c" kind="dir"><name>H:/FireWater/TestProj/Assets/Scripts/Interfaces</name>
+  </compound>
+  <compound refid="dir_4edcbb236dfd51dd81727243a38df6a0" kind="dir"><name>H:/FireWater/TestProj/Assets/Scripts</name>
+  </compound>
+</doxygenindex>

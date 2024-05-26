@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_activatable_moving_object_controller" xml:lang="ru">
+<title>Класс ActivatableMovingObjectController</title>
+<indexterm><primary>ActivatableMovingObjectController</primary></indexterm>
+<para>
+
+<para>Класс предназначен для управления движением активируемого объекта. Объект может перемещаться вертикально или горизонтально между двумя позициями и изменять своё состояние при активации или деактивации. </para>
+ 
+</para>
+<para>
+Базовые классы:MonoBehaviour и <link linkend="_interface_i_activateble">IActivateble</link>.</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_activatable_moving_object_controller_1a9f4bb93dc5f4e216a6cbf72172d48fd0">Activate</link> ()</para>
+
+<para>Метод для активации объекта. Изменяет состояние объекта на противоположное от начального. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_activatable_moving_object_controller_1ae0be8e329c91d083088bf5bafd16f3ea">Deactivate</link> ()</para>
+
+<para>Метод для деактивации объекта. Возвращает объект в начальное состояние. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Открытые атрибуты    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_activatable_moving_object_controller_1a46954a0824b3f49eecf46dfbe1a7522e"/>float <emphasis role="strong">speed</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_activatable_moving_object_controller_1a1198a58394904bf328e9769ec27e9c11"/>bool <emphasis role="strong">isVertical</emphasis> = true</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_activatable_moving_object_controller_1a2be07df05869ed42fc2b2627a16ed6aa"/>float <emphasis role="strong">moveWeight</emphasis> = 1</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_activatable_moving_object_controller_1a1a7bea3f251f9528c6b3de5bcc1186f5"/>void <emphasis role="strong">Start</emphasis> ()</para>
+
+<para>Метод Start вызывается при инициализации объекта. Инициализирует начальную и конечную позиции объекта, а также начальное состояние закрытия. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_activatable_moving_object_controller_1aff8cdf8f937d2977fb47dcd36602310b"/>void <emphasis role="strong">FixedUpdate</emphasis> ()</para>
+
+<para>Метод FixedUpdate вызывается на каждом фиксированном кадре. Управляет движением объекта между начальной и конечной позициями. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые данные    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_activatable_moving_object_controller_1a344135e24b8097755c7813e9dc057d19"/>bool <emphasis role="strong">isClosed</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_activatable_moving_object_controller_1a502bce807b096066231c199d09d05de4"/>bool <emphasis role="strong">initClosedState</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_activatable_moving_object_controller_1a61340f45652ac4330d274097f1877cbd"/>Vector2 <emphasis role="strong">startPosition</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_activatable_moving_object_controller_1ab123801fd096996f844f67ec61ba35cc"/>Vector2 <emphasis role="strong">endPosition</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Класс предназначен для управления движением активируемого объекта. Объект может перемещаться вертикально или горизонтально между двумя позициями и изменять своё состояние при активации или деактивации. </para>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_class_activatable_moving_object_controller_1a9f4bb93dc5f4e216a6cbf72172d48fd0"/><section>
+    <title>Activate()</title>
+<indexterm><primary>Activate</primary><secondary>ActivatableMovingObjectController</secondary></indexterm>
+<indexterm><primary>ActivatableMovingObjectController</primary><secondary>Activate</secondary></indexterm>
+<para><computeroutput>void ActivatableMovingObjectController.Activate ( )</computeroutput></para><para>
+
+<para>Метод для активации объекта. Изменяет состояние объекта на противоположное от начального. </para>
+</para>
+<para>
+Замещает <link linkend="_interface_i_activateble_1a60ec707b80b21f14dfe0013b44ae524a">IActivateble</link>.</para>
+</section>
+<anchor xml:id="_class_activatable_moving_object_controller_1ae0be8e329c91d083088bf5bafd16f3ea"/><section>
+    <title>Deactivate()</title>
+<indexterm><primary>Deactivate</primary><secondary>ActivatableMovingObjectController</secondary></indexterm>
+<indexterm><primary>ActivatableMovingObjectController</primary><secondary>Deactivate</secondary></indexterm>
+<para><computeroutput>void ActivatableMovingObjectController.Deactivate ( )</computeroutput></para><para>
+
+<para>Метод для деактивации объекта. Возвращает объект в начальное состояние. </para>
+</para>
+<para>
+Замещает <link linkend="_interface_i_activateble_1a0651b645f094eba415fdf06fd5012690">IActivateble</link>.</para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs</section>
+</section>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="ru">
+  <compounddef id="dir_d5657f1c73d4e980db6e1e9bf6fd54c8" kind="dir">
+    <compoundname>H:/FireWater/TestProj/Assets/Scripts/Controllers</compoundname>
+    <innerfile refid="_activatable_moving_object_controller_8cs">ActivatableMovingObjectController.cs</innerfile>
+    <innerfile refid="_button_controller_8cs">ButtonController.cs</innerfile>
+    <innerfile refid="_lever_controller_8cs">LeverController.cs</innerfile>
+    <innerfile refid="_liquid_controller_8cs">LiquidController.cs</innerfile>
+    <innerfile refid="_player_movement_controller_8cs">PlayerMovementController.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_character_switcher" xml:lang="ru">
+<title>Класс CharacterSwitcher</title>
+<indexterm><primary>CharacterSwitcher</primary></indexterm>
+<para>
+
+<para>Класс предназначен для переключения спавна между игровыми персонажами. Управляет текущим активным персонажем и изменяет его при необходимости. </para>
+ 
+</para>
+<para>
+Базовые классы:MonoBehaviour.</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_character_switcher_1ab8bb8fb97e90542792a92071c561ee68"/>void <emphasis role="strong">SwitchNewxtSpawnCharacter</emphasis> ()</para>
+
+<para>Метод для переключения на следующего персонажа при спавне. Изменяет активного персонажа на следующего в списке. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_character_switcher_1a0e945bb50ec04a90d3fb2db10138ddf7"/>void <emphasis role="strong">Start</emphasis> ()</para>
+
+<para>Метод Start вызывается при инициализации объекта. Инициализирует менеджер ввода игрока и устанавливает первого персонажа. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые данные    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_character_switcher_1a7f95df197a7204d5590ba9f5bf348d5c"/>int <emphasis role="strong">index</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_character_switcher_1a481c5113abda66e2070a2cb193c4dd58"/>List&lt; GameObject &gt; <emphasis role="strong">players</emphasis> = new List&lt;GameObject&gt;()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_character_switcher_1a6367ec43104e6622fb078ee105e388c6"/>PlayerInputManager <emphasis role="strong">manager</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Класс предназначен для переключения спавна между игровыми персонажами. Управляет текущим активным персонажем и изменяет его при необходимости. </para>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+H:/FireWater/TestProj/Assets/Scripts/CharacterSwitcher.cs</section>
+</section>

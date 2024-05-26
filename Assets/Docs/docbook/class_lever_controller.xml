@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_lever_controller" xml:lang="ru">
+<title>Класс LeverController</title>
+<indexterm><primary>LeverController</primary></indexterm>
+<para>
+
+<para>Класс предназначен для управления рычагом, который активирует или деактивирует объекты при повороте. </para>
+ 
+</para>
+<para>
+Базовые классы:MonoBehaviour.</para>
+<simplesect>
+    <title>Свойства    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_lever_controller_1a04bc6813dc3e818d82258a9f1b2ab6f1"/>List&lt; <link linkend="_interface_i_activateble">IActivateble</link> &gt; <emphasis role="strong">activatableTargets</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_lever_controller_1a9e29b471f4276de62d7697496f0e78cc"/>void <emphasis role="strong">Update</emphasis> ()</para>
+
+<para>Метод Update вызывается на каждом кадре. Проверяет поворот рычага и активирует или деактивирует объекты в зависимости от угла поворота. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые данные    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_lever_controller_1a62e4369ce07619cb111ebf3762152e54"/>List&lt; Object &gt; <emphasis role="strong">objectsToActivate</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Класс предназначен для управления рычагом, который активирует или деактивирует объекты при повороте. </para>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+H:/FireWater/TestProj/Assets/Scripts/Controllers/LeverController.cs</section>
+</section>

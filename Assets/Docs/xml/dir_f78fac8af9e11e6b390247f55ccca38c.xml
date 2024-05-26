@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="ru">
+  <compounddef id="dir_f78fac8af9e11e6b390247f55ccca38c" kind="dir">
+    <compoundname>H:/FireWater/TestProj/Assets/Scripts/Interfaces</compoundname>
+    <innerfile refid="_i_activatable_8cs">IActivatable.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="H:/FireWater/TestProj/Assets/Scripts/Interfaces/"/>
+  </compounddef>
+</doxygen>

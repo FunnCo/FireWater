@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_liquid_controller" xml:lang="ru">
+<title>Класс LiquidController</title>
+<indexterm><primary>LiquidController</primary></indexterm>
+<para>
+
+<para>Класс предназначен для управления поведением жидкости. Жидкость может уничтожать игроков с определёнными тегами при их попадании в зону триггера. </para>
+ 
+</para>
+<para>
+Базовые классы:MonoBehaviour.</para>
+<simplesect>
+    <title>Закрытые члены    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_liquid_controller_1a78a6f2b4fc6d26b0b5b5f1c274199d26">OnTriggerEnter2D</link> (Collider2D collision)</para>
+
+<para>Метод вызывается при входе другого коллайдера в триггер. Проверяет тег коллайдера и уничтожает объект игрока, если он соответствует условиям. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые данные    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_liquid_controller_1a445a5156b4110d44f9b90e49165a7a88"/>bool <emphasis role="strong">canKillFirePlayer</emphasis> = false</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_liquid_controller_1a83666910e7d0f9a391a30bcf829969e4"/>bool <emphasis role="strong">canKillWaterPlayer</emphasis> = false</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Класс предназначен для управления поведением жидкости. Жидкость может уничтожать игроков с определёнными тегами при их попадании в зону триггера. </para>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_class_liquid_controller_1a78a6f2b4fc6d26b0b5b5f1c274199d26"/><section>
+    <title>OnTriggerEnter2D()</title>
+<indexterm><primary>OnTriggerEnter2D</primary><secondary>LiquidController</secondary></indexterm>
+<indexterm><primary>LiquidController</primary><secondary>OnTriggerEnter2D</secondary></indexterm>
+<para><computeroutput>void LiquidController.OnTriggerEnter2D (Collider2D collision)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Метод вызывается при входе другого коллайдера в триггер. Проверяет тег коллайдера и уничтожает объект игрока, если он соответствует условиям. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>collision</entry><entry>
+<para>Коллайдер, который вошёл в триггер.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+H:/FireWater/TestProj/Assets/Scripts/Controllers/LiquidController.cs</section>
+</section>

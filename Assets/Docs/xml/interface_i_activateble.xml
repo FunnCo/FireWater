@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="ru">
+  <compounddef id="interface_i_activateble" kind="interface" language="C#" prot="public">
+    <compoundname>IActivateble</compoundname>
+    <derivedcompoundref refid="class_activatable_moving_object_controller" prot="public" virt="non-virtual">ActivatableMovingObjectController</derivedcompoundref>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_i_activateble_1a60ec707b80b21f14dfe0013b44ae524a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IActivateble.Activate</definition>
+        <argsstring>()</argsstring>
+        <name>Activate</name>
+        <qualifiedname>IActivateble.Activate</qualifiedname>
+        <reimplementedby refid="class_activatable_moving_object_controller_1a9f4bb93dc5f4e216a6cbf72172d48fd0">Activate</reimplementedby>
+        <briefdescription>
+<para>Метод для активации объекта. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Interfaces/IActivatable.cs" line="13" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_i_activateble_1a0651b645f094eba415fdf06fd5012690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void IActivateble.Deactivate</definition>
+        <argsstring>()</argsstring>
+        <name>Deactivate</name>
+        <qualifiedname>IActivateble.Deactivate</qualifiedname>
+        <reimplementedby refid="class_activatable_moving_object_controller_1ae0be8e329c91d083088bf5bafd16f3ea">Deactivate</reimplementedby>
+        <briefdescription>
+<para>Метод для деактивации объекта. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Interfaces/IActivatable.cs" line="18" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Интерфейс, предназначенный для объектов, которые могут быть активированы и деактивированы. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>ActivatableMovingObjectController</label>
+        <link refid="class_activatable_moving_object_controller"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>IActivateble</label>
+        <link refid="interface_i_activateble"/>
+      </node>
+    </inheritancegraph>
+    <location file="H:/FireWater/TestProj/Assets/Scripts/Interfaces/IActivatable.cs" line="8" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Interfaces/IActivatable.cs" bodystart="9" bodyend="19"/>
+    <listofallmembers>
+      <member refid="interface_i_activateble_1a60ec707b80b21f14dfe0013b44ae524a" prot="public" virt="non-virtual"><scope>IActivateble</scope><name>Activate</name></member>
+      <member refid="interface_i_activateble_1a0651b645f094eba415fdf06fd5012690" prot="public" virt="non-virtual"><scope>IActivateble</scope><name>Deactivate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

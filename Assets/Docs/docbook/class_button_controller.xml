@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_button_controller" xml:lang="ru">
+<title>Класс ButtonController</title>
+<indexterm><primary>ButtonController</primary></indexterm>
+<para>
+
+<para>Класс предназначен для управления кнопкой, которая активирует или деактивирует заданные объекты при нажатии. </para>
+ 
+</para>
+<para>
+Базовые классы:MonoBehaviour.</para>
+<simplesect>
+    <title>Свойства    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_button_controller_1a26bba632a27f44025bdca349ac577dcb"/>List&lt; <link linkend="_interface_i_activateble">IActivateble</link> &gt; <emphasis role="strong">activatableTargets</emphasis><computeroutput> [get]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_button_controller_1aceca9195c284be4c2ccfc7836c55a9a1"/>void <emphasis role="strong">OnTriggerEnter2D</emphasis> (Collider2D collision)</para>
+
+<para>Метод вызывается при входе другого объекта в триггер кнопки. Устанавливает флаг, что кнопка нажата. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_button_controller_1a50e83b1fea24621eaccf2b32a8ba2fbe"/>void <emphasis role="strong">OnTriggerExit2D</emphasis> (Collider2D collision)</para>
+
+<para>Метод вызывается при выходе другого объекта из триггера кнопки. Сбрасывает флаг, что кнопка нажата, и деактивирует все цели. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_button_controller_1a0925d59c54b2b7762aee924e64e84c82"/>void <emphasis role="strong">Update</emphasis> ()</para>
+
+<para>Метод Update вызывается на каждом кадре. Активирует все цели, если кнопка нажата. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые данные    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_button_controller_1a156a72ad5acc5983d671315fdfa78074"/>List&lt; Object &gt; <emphasis role="strong">objectsToActivate</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_button_controller_1ae94e520e946aa9df0dd63a1d285a5491"/>bool <emphasis role="strong">isButtonPressed</emphasis> = false</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Класс предназначен для управления кнопкой, которая активирует или деактивирует заданные объекты при нажатии. </para>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+H:/FireWater/TestProj/Assets/Scripts/Controllers/ButtonController.cs</section>
+</section>

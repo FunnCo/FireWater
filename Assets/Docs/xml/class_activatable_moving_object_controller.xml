@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.11.0" xml:lang="ru">
+  <compounddef id="class_activatable_moving_object_controller" kind="class" language="C#" prot="public">
+    <compoundname>ActivatableMovingObjectController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+    <basecompoundref refid="interface_i_activateble" prot="public" virt="non-virtual">IActivateble</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_activatable_moving_object_controller_1a344135e24b8097755c7813e9dc057d19" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ActivatableMovingObjectController.isClosed</definition>
+        <argsstring></argsstring>
+        <name>isClosed</name>
+        <qualifiedname>ActivatableMovingObjectController.isClosed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" line="14" column="11" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_activatable_moving_object_controller_1a502bce807b096066231c199d09d05de4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ActivatableMovingObjectController.initClosedState</definition>
+        <argsstring></argsstring>
+        <name>initClosedState</name>
+        <qualifiedname>ActivatableMovingObjectController.initClosedState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" line="17" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_activatable_moving_object_controller_1a61340f45652ac4330d274097f1877cbd" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 ActivatableMovingObjectController.startPosition</definition>
+        <argsstring></argsstring>
+        <name>startPosition</name>
+        <qualifiedname>ActivatableMovingObjectController.startPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" line="20" column="21" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_activatable_moving_object_controller_1ab123801fd096996f844f67ec61ba35cc" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 ActivatableMovingObjectController.endPosition</definition>
+        <argsstring></argsstring>
+        <name>endPosition</name>
+        <qualifiedname>ActivatableMovingObjectController.endPosition</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" line="23" column="21" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_activatable_moving_object_controller_1a46954a0824b3f49eecf46dfbe1a7522e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ActivatableMovingObjectController.speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <qualifiedname>ActivatableMovingObjectController.speed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" line="26" column="19" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_activatable_moving_object_controller_1a1198a58394904bf328e9769ec27e9c11" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ActivatableMovingObjectController.isVertical</definition>
+        <argsstring></argsstring>
+        <name>isVertical</name>
+        <qualifiedname>ActivatableMovingObjectController.isVertical</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" line="29" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_activatable_moving_object_controller_1a2be07df05869ed42fc2b2627a16ed6aa" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ActivatableMovingObjectController.moveWeight</definition>
+        <argsstring></argsstring>
+        <name>moveWeight</name>
+        <qualifiedname>ActivatableMovingObjectController.moveWeight</qualifiedname>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" line="32" column="19" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_activatable_moving_object_controller_1a1a7bea3f251f9528c6b3de5bcc1186f5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActivatableMovingObjectController.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <qualifiedname>ActivatableMovingObjectController.Start</qualifiedname>
+        <briefdescription>
+<para>Метод Start вызывается при инициализации объекта. Инициализирует начальную и конечную позиции объекта, а также начальное состояние закрытия. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" line="38" column="10" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" bodystart="38" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_activatable_moving_object_controller_1aff8cdf8f937d2977fb47dcd36602310b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActivatableMovingObjectController.FixedUpdate</definition>
+        <argsstring>()</argsstring>
+        <name>FixedUpdate</name>
+        <qualifiedname>ActivatableMovingObjectController.FixedUpdate</qualifiedname>
+        <briefdescription>
+<para>Метод FixedUpdate вызывается на каждом фиксированном кадре. Управляет движением объекта между начальной и конечной позициями. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" line="59" column="18" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" bodystart="59" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_activatable_moving_object_controller_1a9f4bb93dc5f4e216a6cbf72172d48fd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActivatableMovingObjectController.Activate</definition>
+        <argsstring>()</argsstring>
+        <name>Activate</name>
+        <qualifiedname>ActivatableMovingObjectController.Activate</qualifiedname>
+        <reimplements refid="interface_i_activateble_1a60ec707b80b21f14dfe0013b44ae524a">Activate</reimplements>
+        <briefdescription>
+<para>Метод для активации объекта. Изменяет состояние объекта на противоположное от начального. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" line="75" column="17" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_activatable_moving_object_controller_1ae0be8e329c91d083088bf5bafd16f3ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActivatableMovingObjectController.Deactivate</definition>
+        <argsstring>()</argsstring>
+        <name>Deactivate</name>
+        <qualifiedname>ActivatableMovingObjectController.Deactivate</qualifiedname>
+        <reimplements refid="interface_i_activateble_1a0651b645f094eba415fdf06fd5012690">Deactivate</reimplements>
+        <briefdescription>
+<para>Метод для деактивации объекта. Возвращает объект в начальное состояние. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" line="84" column="17" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" bodystart="84" bodyend="87"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс предназначен для управления движением активируемого объекта. Объект может перемещаться вертикально или горизонтально между двумя позициями и изменять своё состояние при активации или деактивации. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>ActivatableMovingObjectController</label>
+        <link refid="class_activatable_moving_object_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IActivateble</label>
+        <link refid="interface_i_activateble"/>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>ActivatableMovingObjectController</label>
+        <link refid="class_activatable_moving_object_controller"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IActivateble</label>
+        <link refid="interface_i_activateble"/>
+      </node>
+      <node id="2">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" line="11" column="7" bodyfile="H:/FireWater/TestProj/Assets/Scripts/Controllers/ActivatableMovingObjectController.cs" bodystart="12" bodyend="88"/>
+    <listofallmembers>
+      <member refid="class_activatable_moving_object_controller_1a9f4bb93dc5f4e216a6cbf72172d48fd0" prot="public" virt="non-virtual"><scope>ActivatableMovingObjectController</scope><name>Activate</name></member>
+      <member refid="class_activatable_moving_object_controller_1ae0be8e329c91d083088bf5bafd16f3ea" prot="public" virt="non-virtual"><scope>ActivatableMovingObjectController</scope><name>Deactivate</name></member>
+      <member refid="class_activatable_moving_object_controller_1ab123801fd096996f844f67ec61ba35cc" prot="private" virt="non-virtual"><scope>ActivatableMovingObjectController</scope><name>endPosition</name></member>
+      <member refid="class_activatable_moving_object_controller_1aff8cdf8f937d2977fb47dcd36602310b" prot="private" virt="non-virtual"><scope>ActivatableMovingObjectController</scope><name>FixedUpdate</name></member>
+      <member refid="class_activatable_moving_object_controller_1a502bce807b096066231c199d09d05de4" prot="private" virt="non-virtual"><scope>ActivatableMovingObjectController</scope><name>initClosedState</name></member>
+      <member refid="class_activatable_moving_object_controller_1a344135e24b8097755c7813e9dc057d19" prot="private" virt="non-virtual"><scope>ActivatableMovingObjectController</scope><name>isClosed</name></member>
+      <member refid="class_activatable_moving_object_controller_1a1198a58394904bf328e9769ec27e9c11" prot="public" virt="non-virtual"><scope>ActivatableMovingObjectController</scope><name>isVertical</name></member>
+      <member refid="class_activatable_moving_object_controller_1a2be07df05869ed42fc2b2627a16ed6aa" prot="public" virt="non-virtual"><scope>ActivatableMovingObjectController</scope><name>moveWeight</name></member>
+      <member refid="class_activatable_moving_object_controller_1a46954a0824b3f49eecf46dfbe1a7522e" prot="public" virt="non-virtual"><scope>ActivatableMovingObjectController</scope><name>speed</name></member>
+      <member refid="class_activatable_moving_object_controller_1a1a7bea3f251f9528c6b3de5bcc1186f5" prot="private" virt="non-virtual"><scope>ActivatableMovingObjectController</scope><name>Start</name></member>
+      <member refid="class_activatable_moving_object_controller_1a61340f45652ac4330d274097f1877cbd" prot="private" virt="non-virtual"><scope>ActivatableMovingObjectController</scope><name>startPosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="ru">
+    <info>
+    <title>FireWater</title>
+    </info>
+<chapter>
+    <title>Классы</title>
+    <xi:include href="class_activatable_moving_object_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_button_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_character_switcher.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="interface_i_activateble.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_lever_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_liquid_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="class_player_movement_controller.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

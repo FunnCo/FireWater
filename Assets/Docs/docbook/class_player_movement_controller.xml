@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_player_movement_controller" xml:lang="ru">
+<title>Класс PlayerMovementController</title>
+<indexterm><primary>PlayerMovementController</primary></indexterm>
+<para>
+
+<para>Класс предназначен для управления движением игрока. Обеспечивает перемещение игрока, прыжки и обработку столкновений с землей. </para>
+ 
+</para>
+<para>
+Базовые классы:MonoBehaviour.</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_class_player_movement_controller_1a3b96db2ef668b3a4d2ee67e934dc008d">Move</link> (InputAction.CallbackContext context)</para>
+
+<para>Метод для управления движением игрока. Вызывается при изменении направления движения. </para>
+</listitem>
+            <listitem><para>void <link linkend="_class_player_movement_controller_1a7f8ce256deca83f46585ce2003f06489">Jump</link> (InputAction.CallbackContext context)</para>
+
+<para>Метод для выполнения прыжка игрока. Вызывается при начале прыжка. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Открытые атрибуты    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a8bf7e79702f4b31d2aec7fadf208fa54"/>LayerMask <emphasis role="strong">groundLayerMask</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a990866726e9188370e3d58db4dd382a3"/>LayerMask <emphasis role="strong">movableGroundLayerMask</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1ae677c6157545954ac732602b62f8dc3f"/>PhysicsMaterial2D <emphasis role="strong">slipperyMaterial</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a387651ff85d2012944525f675ebf5f80"/>PhysicsMaterial2D <emphasis role="strong">normalMaterial</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a24d692ea4c2731212fa64c29bc02517f"/>float <emphasis role="strong">playerSpeed</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a7b1a0d7d5f1c0b1d0f9de1e322615c81"/>float <emphasis role="strong">groundCheckDistance</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1afeddddc4be7d0dcb3debb52e93e78e78"/>float <emphasis role="strong">playerJumpForce</emphasis> = 10</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые члены    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a77c70505f08e912f948529ebd2b11cc2"/>void <emphasis role="strong">Start</emphasis> ()</para>
+
+<para>Метод Start вызывается при инициализации объекта. Инициализирует компоненты Rigidbody2D, SpriteRenderer, Animator и CapsuleCollider2D. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1ae5fe1e8776604ded63eb25e191d5fe7b"/>void <emphasis role="strong">Update</emphasis> ()</para>
+
+<para>Метод Update вызывается на каждом кадре. Управляет сменой направления взгляда игрока. </para>
+</listitem>
+            <listitem><para>float? <link linkend="_class_player_movement_controller_1a51d9bc169de7db5462bfca93d11eae48">getGroundedAngleOrNull</link> ()</para>
+
+<para>Метод для получения угла поверхности под игроком. Проверяет наличие земли под игроком и возвращает угол поверхности, если земля найдена. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a0951e6aa1557f1324d88500c2e5d3615"/>void <emphasis role="strong">FixedUpdate</emphasis> ()</para>
+
+<para>Метод FixedUpdate вызывается на каждом фиксированном кадре. Управляет движением, прыжками и физикой игрока. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a3a9807b41bf9ad14099f2293d8037da8"/>void <emphasis role="strong">Flip</emphasis> ()</para>
+
+<para>Метод для смены направления взгляда игрока. Переворачивает спрайт игрока при изменении направления движения. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Закрытые данные    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a34e16c1490246532dcfec5939555dfb3"/>Rigidbody2D <emphasis role="strong">rbPlayer</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a605f6e130289fc9908f223e604de3211"/>float <emphasis role="strong">horizontalDirecton</emphasis> = 0f</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a121eb9609801217a29a0051e98fd1d7d"/>SpriteRenderer <emphasis role="strong">playerRenderer</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a837720dc89ce285d50b00387fac1606f"/>CapsuleCollider2D <emphasis role="strong">playerCollider</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1abc742d17e6b8b96840ed2651cca60d82"/>Animator <emphasis role="strong">playernimator</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1ac87f9438ec31fd4f5c7546405843bb3c"/>bool <emphasis role="strong">isFacingRight</emphasis> = true</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1a53307c6705aac88f688905da4906387c"/>int <emphasis role="strong">jumpCount</emphasis> = 0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_player_movement_controller_1ac332e45ea0ff3406abe9711a40bcbfd9"/>bool <emphasis role="strong">shouldJump</emphasis> = false</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+
+<para>Класс предназначен для управления движением игрока. Обеспечивает перемещение игрока, прыжки и обработку столкновений с землей. </para>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_class_player_movement_controller_1a51d9bc169de7db5462bfca93d11eae48"/><section>
+    <title>getGroundedAngleOrNull()</title>
+<indexterm><primary>getGroundedAngleOrNull</primary><secondary>PlayerMovementController</secondary></indexterm>
+<indexterm><primary>PlayerMovementController</primary><secondary>getGroundedAngleOrNull</secondary></indexterm>
+<para><computeroutput>float? PlayerMovementController.getGroundedAngleOrNull ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Метод для получения угла поверхности под игроком. Проверяет наличие земли под игроком и возвращает угол поверхности, если земля найдена. </para>
+</para>
+
+<para><formalpara><title>Возвращает</title>
+
+<para>Угол поверхности под игроком или null, если земля не найдена.</para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_class_player_movement_controller_1a7f8ce256deca83f46585ce2003f06489"/><section>
+    <title>Jump()</title>
+<indexterm><primary>Jump</primary><secondary>PlayerMovementController</secondary></indexterm>
+<indexterm><primary>PlayerMovementController</primary><secondary>Jump</secondary></indexterm>
+<para><computeroutput>void PlayerMovementController.Jump (InputAction.CallbackContext context)</computeroutput></para><para>
+
+<para>Метод для выполнения прыжка игрока. Вызывается при начале прыжка. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>context</entry><entry>
+<para>Контекст ввода, содержащий данные о прыжке.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_class_player_movement_controller_1a3b96db2ef668b3a4d2ee67e934dc008d"/><section>
+    <title>Move()</title>
+<indexterm><primary>Move</primary><secondary>PlayerMovementController</secondary></indexterm>
+<indexterm><primary>PlayerMovementController</primary><secondary>Move</secondary></indexterm>
+<para><computeroutput>void PlayerMovementController.Move (InputAction.CallbackContext context)</computeroutput></para><para>
+
+<para>Метод для управления движением игрока. Вызывается при изменении направления движения. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>context</entry><entry>
+<para>Контекст ввода, содержащий данные о направлении движения.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+H:/FireWater/TestProj/Assets/Scripts/Controllers/PlayerMovementController.cs</section>
+</section>

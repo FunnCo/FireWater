@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="ru">
+<title>Классы</title>
+Классы с их кратким описанием.<link linkend="_class_activatable_moving_object_controller">ActivatableMovingObjectController</link>
+<para>Класс предназначен для управления движением активируемого объекта. Объект может перемещаться вертикально или горизонтально между двумя позициями и изменять своё состояние при активации или деактивации </para>
+<link linkend="_class_button_controller">ButtonController</link>
+<para>Класс предназначен для управления кнопкой, которая активирует или деактивирует заданные объекты при нажатии </para>
+<link linkend="_class_character_switcher">CharacterSwitcher</link>
+<para>Класс предназначен для переключения спавна между игровыми персонажами. Управляет текущим активным персонажем и изменяет его при необходимости </para>
+<link linkend="_interface_i_activateble">IActivateble</link>
+<para>Интерфейс, предназначенный для объектов, которые могут быть активированы и деактивированы </para>
+<link linkend="_class_lever_controller">LeverController</link>
+<para>Класс предназначен для управления рычагом, который активирует или деактивирует объекты при повороте </para>
+<link linkend="_class_liquid_controller">LiquidController</link>
+<para>Класс предназначен для управления поведением жидкости. Жидкость может уничтожать игроков с определёнными тегами при их попадании в зону триггера </para>
+<link linkend="_class_player_movement_controller">PlayerMovementController</link>
+<para>Класс предназначен для управления движением игрока. Обеспечивает перемещение игрока, прыжки и обработку столкновений с землей </para>
+</section>
